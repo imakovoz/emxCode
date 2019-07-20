@@ -26,6 +26,12 @@ class MessagesController < ApplicationController
       render plain: "1 203 321 5503"
     elsif params["q"] === "Referrer"
       render plain: "LinkedIn"
+    elsif params["q"] === "Source"
+      render plain: "https://github.com/imakovoz/emxCode"
+    elsif params["q"] === "Degree"
+      render plain: "NYU - Gallatin (Behavioral Economics), AppAcademy"
+    elsif params["q"] === "Position"
+      render plain: "TBD"
     elsif params["q"] === "Puzzle"
       render plain: "ABCD"
     end
