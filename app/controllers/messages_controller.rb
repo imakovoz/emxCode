@@ -4,7 +4,12 @@ class MessagesController < ApplicationController
   # GET /messages
   # GET /messages.json
   def index
+    puts params
     @messages = Message.all
+  end
+
+  def answer
+    render plain: "OK"
   end
 
   # GET /messages/1
