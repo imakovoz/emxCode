@@ -9,7 +9,7 @@ class MessagesController < ApplicationController
   end
 
   def answer
-    debugger
+    
     if params["q"] === "Ping"
       render plain: "OK"
     elsif params["q"] === "Email Address"
