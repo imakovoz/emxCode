@@ -9,7 +9,26 @@ class MessagesController < ApplicationController
   end
 
   def answer
-    render plain: "OK"
+    debugger
+    if params["q"] === "Ping"
+      render plain: "OK"
+    elsif params["q"] === "Email Address"
+      render plain: "me@ilyamakovoz.com"
+    elsif params["q"] === "Resume"
+      render plain: "https://www.docdroid.net/o3lqJZO/ilya-makovoz-resume.pdf"
+    elsif params["q"] === "Years"
+      render plain: "1+"
+    elsif params["q"] === "Status"
+      render plain: "Yes"
+    elsif params["q"] === "Name"
+      render plain: "Ilya Makovoz"
+    elsif params["q"] === "Phone"
+      render plain: "1 203 321 5503"
+    elsif params["q"] === "Referrer"
+      render plain: "LinkedIn"
+    elsif params["q"] === "Puzzle"
+      render plain: "ABCD"
+    end
   end
 
   # GET /messages/1
