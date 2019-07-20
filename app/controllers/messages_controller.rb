@@ -9,7 +9,7 @@ class MessagesController < ApplicationController
   end
 
   def answer
-    
+
     if params["q"] === "Ping"
       render plain: "OK"
     elsif params["q"] === "Email Address"
@@ -33,7 +33,7 @@ class MessagesController < ApplicationController
     elsif params["q"] === "Position"
       render plain: "TBD"
     elsif params["q"] === "Puzzle"
-      render plain: "ABCD"
+      render plain: " ABCD/nA=<></nB>=>>/C<<=</nD><>="
     end
   end
 
