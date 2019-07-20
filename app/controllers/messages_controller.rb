@@ -34,9 +34,9 @@ class MessagesController < ApplicationController
       render plain: "TBD"
     elsif params["q"] === "Puzzle"
       render plain: ' ABCD
-      A=<><
-      B>=>>/C<<=<
-      D><>='
+A=<><
+B>=>>/C<<=<
+D><>='
     end
   end
 
